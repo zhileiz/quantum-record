@@ -1,0 +1,68 @@
+@media only screen and (max-width: 767px) {
+  @font-face {
+    font-family: "ThomasMag-reg";
+    src: url("../../../assets/fonts/Thomas Mag Regular.otf");
+    src:
+    url("../../../assets/fonts/Thomas Mag Regular.otf") format("opentype");
+  }
+
+  html{
+    height: 100%;
+    width: 100%;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+    background-color: white;
+  }
+
+  body{
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+    font-size: 50%;
+  }
+
+  .panel-nav {
+    margin-top: 30px;
+
+  }
+
+  .panels-header{
+    font-size: 25px;
+  }
+
+  .modal-content{
+    font-size: 12px;
+  }
+
+  .speaker-img {
+    border: 5px solid #EFE9E1;
+    box-shadow: -10px 20px crimson;
+    margin-top: 0px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  .speaker-name {
+    width: 100%;
+    max-width: 240px;
+    text-align: left;
+    color: white;
+    font-family: avn-demi, pf-heavy, pf-medium;
+    font-size: 15px;
+    line-height: 20px;
+    margin: auto;
+    letter-spacing: 1px;
+  }
+
+  .speaker-title {
+    width: 100%;
+    max-width: 240px;
+    text-align: left;
+    line-height: 15px;
+    font-size: 12px;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+}

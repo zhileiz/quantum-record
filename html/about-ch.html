@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/desktop.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/mobile.min.css">
+    <link rel="stylesheet" href="../css/about-mobile.css">
+    <style>
+      @media only screen and (max-width: 767px) {
+        #whycome{
+          font-size: 50px;
+        }
+
+        .navigation-item a{
+          font-size: 20px;
+        }
+      }
+    </style>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>关于我们 | 宾大沃顿中美峰会 2018</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="/about">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">English</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">菜单</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <a href="/home">
+            <img src="../assets/images/banner.png" height="40px"/>
+            </a>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="/about">
+                  <i class="icofont icofont-globe"></i>
+                   English
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                菜单
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+                立即订票
+                <i class="icofont icofont-dotted-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+            订票
+            <i class="icofont icofont-dotted-right"></i></a>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <a href="/about">
+            <i class="icofont icofont-globe"></i>
+            English
+            </a>
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            菜单
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank"><div class="navigation-action-btn">立即订票</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home-ch">峰会主页</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-4"> <a class="active-item" href="/about-ch">关于我们</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels-ch">论坛板块</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/speakers-ch">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda-ch">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past-ch">往届峰会</a> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.facebook.com/whartonPWCS" target="_blank">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="../assets/images/wechat-code.jpeg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://weibo.com/whartonchinasummit" target="_blank">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="mailto:official@whartonsummit.org" target="_blank">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            菜单
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home-ch">峰会主页</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-4"> <a class="active-item" href="/about-ch">关于我们</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels-ch">论坛版块</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/speakers-ch">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda-ch">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past-ch">往届峰会</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">立即订票</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: Header
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-4"> <a class="active-item" href="./about.html">About</a> <i class="icofont icofont-dotted-left"></i> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">4月13日 - 15日<br/>宾夕法尼亚大学</div>
+      <div class="vertical-sub-title mobile-hide">
+        让我们一起构筑中美交流的桥梁
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        构筑中美交流的桥梁
+      </div>
+      <div class="black-shadow">
+         <h1 class="page-caption" style="font-family: pf-bold;">关于 <br/> PWCS</h1>
+      </div>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">立即订票</div>
+          <div class="col-2 white-bg action-area">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- MARK: TRACY! -->
+
+<div class="white-bg" id="whitebox">
+  <div class="row row-eq-height">
+    <div class="col-lg-4 col-sm-12 col-xs-12">
+      <h2 class="title">全美最大<br>
+        由学生运营的<br>
+        中美峰会</h2>
+    </div>
+    <div class="col-lg-8 col-sm-12 hidden-xs">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 summary">
+          沃顿中美峰会将于2018年4月13日至15日在宾夕法尼亚大学举行。由中国峰会基金会和宾夕法尼亚大学中国中心主办，并得到中国大使馆和宾夕法尼亚州政府的进一步支持。PWCS致力于建立一个有影响力的平台，促进两国之间的沟通，并建立美国在海外的学生之间的联系。拥有来自4个国家，34个州和70多个城市的1500多名与会者，首届峰会已成为美国最大的学生组织峰会。 2018年是中美关系发展的重要一年。我们希望加强沟通，促进两国顶尖学生，专业人士和企业间的合作，为美中之间的长久友谊作出贡献。
+
+        </div>
+        <div class="col-lg-6 col-sm-6 summary">
+          2018年沃顿中美峰会将包括主题演讲，小组讨论，竞赛和网络会议。这是来自两国的有抱负的学生，专业人士，企业家，公司和组织的聚会，将一同讨论中国社会和经济发展的现状和未来以及它与美国和世界的互动。2018年峰会主题是“我们这一代”，将讨论我们这一代，是在如何被赋予社会责任感的巨大创新后，重新定义中国未来。讨论将在六个专题板块中深入展开，包括艺术和娱乐，房地产，技术，社会责任，国际关系，金融和经济。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+      <h2 id="whycome">为何参加？</h2>
+    </div>
+  </div>
+</div>
+<div class="row no-gutters white-bg row-eq-height">
+  <div class="col-lg-6 col-sm-12 col-xs-12 crimson-bg flex">
+    <div id="redbox">
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/black.png">
+        </div>
+      </div>
+      <div class="row reason">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">01</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+
+          <h4>全球展望</h4>
+          <p class="white-paragraph">拿破仑曾说过：“中国是一个沉睡着的巨人。让她继续沉睡吧，因为当她醒来时，她将震撼世界。”今天，“中国”二字频繁地出现在世界的舞台上。巨人终于觉醒了，但她会给世界带来什么样的力量呢？来PWCS一睹为快！</p>
+        </div>
+      </div>
+      <div class="row mid-pos">
+        <div class="strip">
+          <img src="../assets/images/black.png">
+        </div>
+      </div>
+      <div class="row mid-rs reason">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">02</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4>重磅嘉宾带来更独特的见解</h4>
+          <p class="white-paragraph">PWCS的嘉宾是他们各自行业中的领军人物，并为此次峰会带来了他们的心路历程和独到的看法。这是一次不容错过的学习机会！</p>
+        </div>
+      </div>
+      <div class="row last-pos">
+        <div class="strip">
+          <img src="../assets/images/black.png">
+        </div>
+      </div>
+      <div class="row last-rs reason">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">03</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4>更全面的峰会</h4>
+          <p class="white-paragraph">如果您想用创业来改变这个世界，希望能找到一份理想的工作，或者对线上拍卖有兴趣，精彩的周边活动将会给您一个难忘的的PWCS经历！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12 black-bg flex">
+    <div id="blackbox">
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/red.png">
+        </div>
+      </div>
+      <div class="row reason">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">04</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4 class="white-txt">沃顿体验</h4>
+          <p class="white-paragraph">PWCS得到了沃顿商学院的认可。沃顿商学院是世界上最负盛名的商学院之一。来看看世界顶级的商学院究竟是一番怎样的体验吧。</p>
+        </div>
+      </div>
+      <div class="row mid-pos">
+        <div class="strip">
+          <img src="../assets/images/red.png">
+        </div>
+      </div>
+      <div class="row mid-rs reason">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">05</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4 class="white-txt">在校生运营</h4>
+          <p class="white-paragraph">PWCS是由一群热情饱满的宾大学生运营的。往届峰会的成功已经为PWCS打下了扎实的基础。PWCS诚挚邀请您来到我们迄今为止最盛大的峰会一睹我们的成果。</p>
+        </div>
+      </div>
+      <div class="row last-pos">
+        <div class="strip">
+          <img src="../assets/images/red.png">
+        </div>
+      </div>
+      <div class="row last-rs reason">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">06</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4 class="white-txt">探索费城</h4>
+          <p class="white-paragraph">从美国独立纪念堂，自由钟，到随处可见的本杰明富兰克林雕像，费城是一个拥有丰富历史与文化底蕴的城市。另外，费城也是一个充满活力的城市。不要错过了探索2018年超级碗冠军城市的宝贵机会！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Start of new team profile -->
+<div class="team-profile white-bg">
+  <h2 class="center-txt">我们的团队</h2>
+  <div class="slide-container">
+  <!-- These are the buttons -->
+  <div class="row">
+    <div class="teamBars center-txt col-lg-2 col-sm-3 col-12" onclick="currentSlide(1)">Board</div>
+    <div class="teamBars center-txt col-lg-2 col-sm-3 col-12" onclick="currentSlide(2)">Business Development</div>
+    <div class="teamBars center-txt col-lg-2 col-sm-3 col-12" onclick="currentSlide(3)">Marketing</div>
+    <div class="teamBars center-txt col-lg-2 col-sm-3 col-12" onclick="currentSlide(4)">Operations</div>
+    <div class="teamBars center-txt col-lg-2 col-sm-3 col-12" onclick="currentSlide(5)">Administration</div>
+        <div class="teamBars center-txt col-lg-2 col-sm-3 col-12" onclick="currentSlide(6)">Finance</div>
+  </div>
+  <!-- Here are the profiles: Page 1-->
+  <div class="ourProfiles fade-in">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Ruoyang_Ni.jpeg">
+        <h4>Rose Ni</h4>
+        <h5>Co-President</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Shirley_Liu.jpeg">
+        <h4>Shirley Liu</h4>
+        <h5>Co-President</h5>
+        <div class="links">
+          <a href="https://www.instagram.com/shirdusoleil/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yijing_Liu.jpg">
+        <h4>Dawn Liu</h4>
+        <h5>Vice President</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yibo_Chen.jpg">
+        <h4>Yibo Chen</h4>
+        <h5>Vice President</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/yibo-chen-82ab51127/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+          <a href="https://www.instagram.com/ybc18/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/George_Chen.jpg">
+        <h4>George Chen</h4>
+        <h5>Head of PR</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Stephany_Li.jpg">
+        <h4>Yuzhou Stephany Li</h4>
+        <h5>Administration Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Alex_Chen.jpeg">
+        <h4>Alexander Yuang Chen</h4>
+        <h5>Business Development Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Menglu_Zhang.jpg">
+        <h4>Menglu Zhang</h4>
+        <h5>Finance Chair</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/menglu-zhang-199999112/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Lynn_Zhao.jpg">
+        <h4>Lynn Zhao</h4>
+        <h5>Marketing Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Hailey_Feng.jpg">
+        <h4>Hanxiao Hailey Feng</h4>
+        <h5>Operations Chair</h5>
+      </div>
+    </div>
+  </div>
+  <!-- Page 2 -->
+  <div class="ourProfiles fade-in">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Tsz_Kwan_Lam.jpg">
+        <h4>Bill Lam</h4>
+        <h5>Vice Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Jichen_Zhang.jpg">
+        <h4>Phillip Zhang</h4>
+        <h5>Vice Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/David_Chen.jpg">
+        <h4>David Chen</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/davidchenpenn/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Rachel_Yueqi.png">
+        <h4>Rachel Wu</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/rachelyueqiwu/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Jipeng_Liu.jpg">
+        <h4>Jipeng Tony Liu</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/jipeng-liu-85b5419b" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/profile.php?id=100009588560522" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Qihao Yao</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Qingrong Ji</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>William Sun</h4>
+        <h5>Member</h5>
+      </div> -->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Echo_Zeng.jpg">
+        <h4>Echo Zeng</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/echo-zeng-8848258b" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Samuel_Kang.jpg">
+        <h4>Samuel Kang</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/kangsamuel/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/kang.samuel" target="_blank"><i class="icofont icofont-social-facebook"></i></a>&nbsp;
+          <a href="https://www.instagram.com/swk2605/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Mingyu Li</h4>
+        <h5>Member</h5>
+      </div> -->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yilin_Ma.jpg">
+        <h4>Yilin Elina Ma</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/yilin-elina-ma-29a5a1138/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Qiaochu_Guo.jpg">
+        <h4>Qiaochu Guo</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/qiaochu-nova-guo-805879128/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Kitty_Chen.jpg">
+        <h4>Kitty Chen</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/chen-kitty-154925134" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Marianne_Xiong.jpg">
+        <h4>Marianne Xiong</h4>
+        <h5>Member</h5>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Juliette Zhu</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Michael Li</h4>
+        <h5>Senior Advisor</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Lawrence Lu</h4>
+        <h5>Member</h5>
+      </div> -->
+    </div>
+  </div>
+  <!-- Page 3 -->
+  <div class="ourProfiles fade-in">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Zhilei_Zheng.png">
+        <h4>Zhilei Zheng</h4>
+        <h5>Vice Chair</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/zhileiz/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="http://www.zhileiz.com/" target="_blank"><i class="icofont icofont-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yilin_Liu.png">
+        <h4>Elaine Liu</h4>
+        <h5>Vice Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Ashling_Sui.png">
+        <h4>Ashling Sui</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/ashling-jingzi-s-7235baa1/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Tracy Yan</h4>
+        <h5>Member</h5>
+      </div> -->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Sai_Ma.jpg">
+        <h4>Sai William Ma</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/sai-ma-2909a813a" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/saima1998" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Emily_Guo.jpg">
+        <h4>Emily Guo</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Sophie_Xi.jpg">
+        <h4>Sophie Xi</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Xinning_Guo.png">
+        <h4>Xinning Guo</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/xsguo/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+          <a href="http://www.gxinning.com/" target="_blank"><i class="icofont icofont-link-alt"></i></a>
+          <a href="https://www.instagram.com/sherrygxn" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Mindy_Ma.jpg">
+        <h4>Mindy Ma</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/mindy-ma-5058ba150/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Lula_Chou.jpg">
+        <h4>Lula Chou</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://m.facebook.com/fia.waters" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Michelle_Cai.jpg">
+        <h4>Michelle Cai</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/michelle-cai-a87400149/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/Michelle.Cai04" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Tony Zheng</h4>
+        <h5>Member</h5>
+      </div> -->
+    </div>
+  </div>
+  <!-- Page 4 -->
+  <div class="ourProfiles fade-in">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Danning_Tu.jpg">
+        <h4>Danning Tu</h4>
+        <h5>Vice Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yi_Yang.jpg">
+        <h4>Yi Yang</h4>
+        <h5>Vice Chair</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/yi-yang-378a989b/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.instagram.com/yiyang7121/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Ying_Chen.jpg">
+        <h4>Ying Chen</h4>
+        <h5>Vice Chair</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/ying-chen-959202126/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>William Sun</h4>
+        <h5>Member</h5>
+      </div>-->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Wenhui_Zhao.png">
+        <h4>Clover Zhao</h4>
+        <h5>Member</h5>
+      </div>
+      <!--
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Zhiyuan Liu</h4>
+        <h5>Volunteer</h5>
+      </div> -->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Cecilia_Wang.png">
+        <h4>Cecilia Wang</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/yixi-wang-272087158/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.instagram.com/ybc18/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Lei_Wang.jpg">
+        <h4>Lei Wang</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/lei-wang-084a64158/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yijie_Zhao.jpg">
+        <h4>Lisa Yijie Zhao</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/lisa-zhao-48093b146/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/lisa.zhao.1485" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Gaorui_Liu.jpg">
+        <h4>Ray Liu</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Wayne_Yang.jpg">
+        <h4>Wenyao Yang</h4>
+        <h5>Member</h5>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Wenhui Zhao</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Thomas Wang</h4>
+        <h5>Member</h5>
+      </div> -->
+    </div>
+  </div>
+  <!-- Page 5 -->
+  <div class="ourProfiles fade-in">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Xiaoya_Song.jpg">
+        <h4>Xiaoya Song</h4>
+        <h5>Vice Chair</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/xiaoya-sabrina-song-b0919b127/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Julia Chen</h4>
+        <h5>Member</h5>
+      </div> -->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/MaCherie.jpg">
+        <h4>Chelsie Xu</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/chelsie-xu-532951149/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Shangting_Sun.jpg">
+        <h4>Shangting Sun</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.facebook.com/lucy.sun.16" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+          <a href="https://www.instagram.com/lucusub/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Claire_Yu.jpg">
+        <h4>Claire Yu</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/claire-yu-b4799b155/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/yu.r.claire" target="_blank"><i class="icofont icofont-social-facebook"></i></a>&nbsp;
+          <a href="https://www.instagram.com/ybc18/" target="_blank"><i class="icofont icofont-social-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yiting_Hua.jpg">
+        <h4>Ellen Hua</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/ellen-yiting-hua-2901b8133/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/yiting.hua.7" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Cynthia_Li.png">
+        <h4>Cynthia Li</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/yun-cynthia-li-74b305149/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://www.facebook.com/cynthia.li.5817" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Sanny_Dai.png">
+        <h4>Sanny Dai</h4>
+        <h5>Member</h5>
+      </div>
+    </div>
+  </div>
+  <!-- Page 6 -->
+  <div class="ourProfiles fade-in">
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Yitao_Ding.jpg">
+        <h4>Jeff Ding</h4>
+        <h5>Vice Chair</h5>
+      </div>
+      <!-- <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Grace Guo</h4>
+        <h5>Vice Chair</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/unnamed.png">
+        <h4>Jingxin Wang</h4>
+        <h5>Vice Chair</h5>
+      </div> -->
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Lingpei_Zhou.jpeg">
+        <h4>Lingpei Zhou</h4>
+        <h5>Member</h5>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-6">
+        <img class="img-fluid" src="../assets/images/Carol_Zhou.jpeg">
+        <h4>Carol Zhou</h4>
+        <h5>Member</h5>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/%E9%9D%B3%E5%BA%B7-%E5%91%A8-b14263119/" target="_blank"><i class="icofont icofont-social-linkedin"></i></a>&nbsp;
+          <a href="https://m.facebook.com/karol.zhou.9?ref=wizard" target="_blank"><i class="icofont icofont-social-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- End of new team profile -->
+
+
+
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/footer-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/about.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+#whitebox{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+#recap{
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+#question{
+  color: red;
+  padding-bottom: 30px;
+}
+#whycome{
+  text-align: center;
+  padding-top: 60px;
+  color: rgba(160, 160, 160, 0.5);
+  font-size: 80px;
+}
+#redbox{
+  background-color: crimson;
+  padding: 10%;
+  color: white;
+  font-family: avn-regular, pf-regular;
+  line-height: 30px;
+}
+
+#redbox .speaker-name{
+  font-family: avn-demi, pf-heavy, pf-medium;
+}
+#blackbox{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10%;
+  color: white;
+  font-family: avn-regular, pf-regular;
+  line-height: 30px;
+  height: 100%;
+}
+
+#blackbox .speaker-name{
+  font-family: avn-demi, pf-heavy, pf-medium;
+}
+
+.header {
+  background: url("../assets/images/bg-past.jpg");
+  background-position: right top;
+  background-size: cover;
+}
+
+.year-title {
+  font-family: avn-demi, pf-heavy, pf-medium;
+  font-size: 50px;
+}
+.slogan-title {
+  font-family: avn-regular, pf-regular;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.year-desc p {
+  font-family: avn-regular, pf-regular;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.slogan-title span {
+  font-family: avn-demi, pf-heavy, pf-medium;
+  color: crimson;
+}
+.my-icon-next{
+  content: url("../assets/images/next-icon.png") !IMPORTANT;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 40%;
+}
+.my-icon-prev{
+  content: url("../assets/images/prev-icon.png") !IMPORTANT;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 40%;
+}
+.carousel-control-next{
+  max-width: 10%;
+}
+.carousel-control-prev{
+  max-width: 10%;
+}
+
+.strip{
+  padding-bottom: 15px;
+}
+.number{
+  color: white;
+  font-size: 50px;
+}
+.img-responsive img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.picture{
+  width: 100%;
+}
+.carousel-item{
+  padding-bottom: 10%;
+}
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+.intro-container{
+  padding-top: 10%;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.carousel-item{
+  margin-bottom: 10%;
+}
+
+.summit-year {
+  width: 350px;
+  margin: auto;
+  font-family: avn-ultra, pf-light;
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}

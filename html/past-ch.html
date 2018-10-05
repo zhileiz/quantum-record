@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/desktop.min.css">
+    <link rel="stylesheet" href="../css/past.css">
+    <link rel="stylesheet" href="../css/mobile.min.css">
+    <link rel="stylesheet" href="../css/past-mobile.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>往届峰会 | 宾大沃顿中美峰会 2018</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="/past">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">English</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">菜单</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <a href="/home-ch">
+            <img src="../assets/images/banner.png" height="40px"/>
+            </a>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="/home-ch">
+                  <i class="icofont icofont-globe"></i>
+                    English
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                菜单
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+                立即订票
+                <i class="icofont icofont-dotted-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+            立即订票
+            <i class="icofont icofont-dotted-right"></i></a>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <a href="/past">
+            <i class="icofont icofont-globe"></i>
+              English
+            </a>
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            菜单
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank"><div class="navigation-action-btn">立即注册</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home-cj">峰会主页</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels-ch">论坛板块</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/speakers-ch">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda-ch">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="/past-ch">往届峰会</a> <i class="icofont icofont-dotted-left"></i> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.facebook.com/whartonPWCS" target="_blank">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="../assets/images/wechat-code.jpeg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://weibo.com/whartonchinasummit" target="_blank">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="mailto:official@whartonsummit.org" target="_blank">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            菜单
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home-ch">峰会主页</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels-ch">板块论坛</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/speakers-ch">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda-ch">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="/past-ch">往届峰会</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com" target="_blank">立即订票</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      MARK: Header
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./past.html">Past</a> <i class="icofont icofont-dotted-left"></i> </div>
+
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">四月十三日——四月十五日<br/>宾夕法尼亚大学</div>
+      <div class="vertical-sub-title mobile-hide">
+        让我们一起，构筑中美交流的桥梁
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        让我们一起，构筑中美交流的桥梁
+      </div>
+      <div class="black-shadow">
+         <h1 class="page-caption">往届 <br/> 峰会</h1>
+      </div>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">立即购票</div>
+          <div class="col-2 white-bg action-area">
+            <a href="https://whartonchinasummit.ticketleap.com" target="_blank" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: content
+    -->
+
+    <!-- MARK: TRACY! -->
+
+    <div class="white-bg" id="whitebox">
+      <div class="row row-eq-height">
+        <div class="col-lg-5 col-sm-12 col-xs-12">
+          <h2 class="year-title">2017</h2>
+          <h2 class="slogan-title">
+            <span>中国看世界: </span>全球化战略的整合<br>
+            <span>世界看中国: </span>供给侧改革的挑战</h2>
+        </div>
+        <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+          <p>如今，中国二字无疑是所有国际论坛上反复提及、不容小视的主角 。这个拥有巨大经济总量、运转市场、和资金储备的国家，其兴盛源于近几十年来的经济变革。</p>
+          <p>可是，伴随着近期经济发展的平缓走向、传统行业的周期性衰退、以及经济结构的调整，国内外的企业家和经济学家不禁试想，中国将如何破解高速发展后的经济增长瓶颈。应对全球变化多端的样貌，中国是否可以完善全球化战略整合，并化解供给侧改革带来的挑战？
+          </p>
+          <p>2017年的峰会旨于搭建全美影响力最大的海外菁英交流平台，邀请中美各界领袖解读中国企业的发展前景，一同探讨中国和世界磨合轨道中存在的契合与机遇 。
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+          <h2 id="whycome">往届嘉宾</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters white-bg row-eq-height">
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <div id="redbox">
+          <div class="row center-txt">
+            <div class="summit-year">PWCS 2017</div>
+          </div>
+          <div class="row row-eq-height">
+            <div class="col-4 speaker-name">章启月</div>
+            <div class="col-8 speaker-title"> 中华人民共和国驻纽约总领事<br/></div>
+            <div class="col-4 speaker-name">潘石屹</div>
+            <div class="col-8 speaker-title"> SOHO中国董事长</div>
+            <div class="col-4 speaker-name">张纪中</div>
+            <div class="col-8 speaker-title">中央电视台制片人、导演和高级经济师</div>
+            <div class="col-4 speaker-name">周忻</div>
+            <div class="col-8 speaker-title">易居董事会主席</div>
+            <div class="col-4 speaker-name">李宁</div>
+            <div class="col-8 speaker-title">奥运冠军，李宁体育用品有限公司董事长</div>
+            <div class="col-4 speaker-name">张一鸣</div>
+            <div class="col-8 speaker-title">今日头条创始人董事长</div>
+            <div class="col-4 speaker-name">Tad Smith</div>
+            <div class="col-8 speaker-title">苏富比全球CEO，主席</div>
+            <div class="col-4 speaker-name">王济武</div>
+            <div class="col-8 speaker-title"> 启迪控股董事长</div>
+            <div class="col-4 speaker-name">闫凯境</div>
+            <div class="col-8 speaker-title">天士力制药集团股份有限公司董事长</div>
+            <div class="col-4 speaker-name">胡海平</div>
+            <div class="col-8 speaker-title"> 杉杉控股有限公司董事局主席</div>
+            <div class="col-4 speaker-name">王强</div>
+            <div class="col-8 speaker-title">真格基金创始人</div>
+            <div class="col-4 speaker-name">徐辰</div>
+            <div class="col-8 speaker-title"> 中美总商会会长、中国银行美国行长</div>
+            <div class="col-4 speaker-name">黄晓捷</div>
+            <div class="col-8 speaker-title"> 九鼎投资共同创始人兼总裁</div>
+            <div class="col-4 speaker-name">车品觉</div>
+            <div class="col-8 speaker-title">国信优易数据研究院院长，红杉资本中国基金专家合伙人</div>
+            <div class="col-4 speaker-name">孙坚</div>
+            <div class="col-8 speaker-title">如家酒店CEO</div>
+            <div class="col-4 speaker-name">丁祖昱</div>
+            <div class="col-8 speaker-title">易居CEO</div>
+            <div class="col-4 speaker-name">谢其润</div>
+            <div class="col-8 speaker-title">正大制药集团董事长</div>
+            <div class="col-4 speaker-name">Lawton R. Burns</div>
+            <div class="col-8 speaker-title">沃顿健康管理和经济中心主任，生命科学与管理项目联合主任</div>
+            <div class="col-4 speaker-name">Bruce Novich</div>
+            <div class="col-8 speaker-title">Cellular Dynamics International Corporation首席营业官</div>
+            <div class="col-4 speaker-name">翁笑雨</div>
+            <div class="col-8 speaker-title"> Guggenheim艺术基金会中国策展人</div>
+            <div class="col-4 speaker-name">陆雄文</div>
+            <div class="col-8 speaker-title">复旦大学管理学院院长，斯隆管理学院访问学者</div>
+            <div class="col-4 speaker-name">何梅</div>
+            <div class="col-8 speaker-title"> 外联出国顾问集团董事长， 阿拉善SEE生态协会上海中心副主席</div>
+            <div class="col-4 speaker-name">严正</div>
+            <div class="col-8 speaker-title"> 哥伦比亚大学教师学院院长特别顾问，纽约电影学院董事会主席</div>
+            <div class="col-4 speaker-name">曹辉宁</div>
+            <div class="col-8 speaker-title">长江商学院金融学教授，金融MBA学术主任，美国财务学会会员</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <div id="blackbox">
+          <div class="row center-txt">
+            <div class="summit-year">PWCS 2016</div>
+          </div>
+          <div class="row">
+            <div class="col-4 speaker-name">雷军</div>
+            <div class="col-8 speaker-title">小米创始人</div>
+            <div class="col-4 speaker-name">张吉星</div>
+            <div class="col-8 speaker-title">中国石化美国公司总经理，中国石化美国总代表</div>
+            <div class="col-4 speaker-name">谭强</div>
+            <div class="col-8 speaker-title">美国MetLife大都会集团大中华区CEO</div>
+            <div class="col-4 speaker-name">周忻</div>
+            <div class="col-8 speaker-title">易居(中国)控股有限公司董事局主席</div>
+            <div class="col-4 speaker-name">潘军</div>
+            <div class="col-8 speaker-title">花样年控股集团有限公司董事局主席兼首席执行官</div>
+            <div class="col-4 speaker-name">林中华</div>
+            <div class="col-8 speaker-title">峰瑞资本创始合伙人</div>
+            <div class="col-4 speaker-name">丁长峰</div>
+            <div class="col-8 speaker-title">万科集团高级副总裁、万科集团商业地产负责人</div>
+            <div class="col-4 speaker-name">倪建达</div>
+            <div class="col-8 speaker-title">钜派投资集团联席董事长兼 CEO</div>
+            <div class="col-4 speaker-name">李一</div>
+            <div class="col-8 speaker-title">摩根大通中国区主席兼首席执行官</div>
+            <div class="col-4 speaker-name">陈凯歌</div>
+            <div class="col-8 speaker-title">著名导演</div>
+            <div class="col-4 speaker-name">韩三平</div>
+            <div class="col-8 speaker-title">前中国电影集团公司董事长兼总经理</div>
+            <div class="col-4 speaker-name">Max Michael</div>
+            <div class="col-8 speaker-title">美国United Talent Agency 亚洲商务开发总负责人</div>
+            <div class="col-4 speaker-name">王彦伶</div>
+            <div class="col-8 speaker-title">北京 798 文化创意产业园创始人</div>
+            <div class="col-4 speaker-name">林瀚</div>
+            <div class="col-8 speaker-title">M WOODS 美术馆创始人</div>
+            <div class="col-4 speaker-name">陈漫</div>
+            <div class="col-8 speaker-title">国际时尚摄影师, 视觉艺术家</div>
+            <div class="col-4 speaker-name">董功</div>
+            <div class="col-8 speaker-title">著名建筑师、直向建筑创始人</div>
+            <div class="col-4 speaker-name">魏珂</div>
+            <div class="col-8 speaker-title">36氪首席运营官</div>
+            <div class="col-4 speaker-name">段冬</div>
+            <div class="col-8 speaker-title">58赶集集团高级副总裁</div>
+            <div class="col-4 speaker-name">崔晓波</div>
+            <div class="col-8 speaker-title">TalkingData（腾云天下）创始人&CEO</div>
+            <div class="col-4 speaker-name">唐杰</div>
+            <div class="col-8 speaker-title">苏宁美国硅谷研究院总经理</div>
+            <div class="col-4 speaker-name">Jay Coen Gilbert</div>
+            <div class="col-8 speaker-title">B Lab 创始人，美国著名企业家、投资人</div>
+            <div class="col-4 speaker-name">韩靖</div>
+            <div class="col-8 speaker-title">友成企业家基金会副秘书长，新公益实践者</div>
+            <div class="col-4 speaker-name">邓飞</div>
+            <div class="col-8 speaker-title">前凤凰周刊记者部主任，知名公益人、社会企业家</div>
+            <div class="col-4 speaker-name">马锦华</div>
+            <div class="col-8 speaker-title">香港著名公益人，香港城市大学火焰计划执行总监，太平绅士</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bg" id="whitebox" style="padding-bottom: 5%;">
+      <div class="row row-eq-height">
+        <div class="col-lg-5 col-sm-12 col-xs-12">
+          <h2 class="year-title">2016</h2>
+          <h2 class="slogan-title">
+            <span>中国的“新常态”: </span><br/>新增长动力<br>
+        </div>
+        <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+          <p>经过几十年的高速增长，中国经济正在失去动力。 包括出口，基础设施投资和房地产在内的传统司机正在失去势头。 对此，中国央行削减了利率，但其影响受到中国金融体系不完全自由化的限制。 由于地方政府债务已经上升到危险水平，政府还对财政刺激措施持谨慎态度。 换句话说，旧时期的高速增长已经结束，中国经济正在进入“新常态”。
+          </p>
+          <p>展望未来，从政府官员到商人，学者到投资者，每个人都在寻找新的增长动力。 它是科技领域的创新和创业，还是蓬勃发展的娱乐和媒体行业？ 这是金融体系的自由化还是国有企业的改革？
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/footer-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+    </body>
+</html>
